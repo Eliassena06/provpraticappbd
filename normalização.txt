@@ -1,0 +1,27 @@
+1ª Forma Normal (1FN)
+
+A 1FN exige que todos os atributos sejam atômicos e que não existam grupos repetitivos.
+
+No modelo apresentado:
+
+Todas as tabelas (aluno, professor, turma, disciplina, matricula) possuem atributos simples e indivisíveis, não ha listas ou campos multivalorados.
+
+2ª Forma Normal (2FN)
+
+A 2FN exige que todos os atributos não-chave dependam totalmente da chave primária.
+
+No modelo:
+
+Cada tabela possui chave primária simples (ex: id_aluno, id_professor).
+Na tabela matricula, os atributos nota e frequencia dependem totalmente da relação entre id_aluno e id_disciplina, não existem dependências parciais.
+
+3ª Forma Normal (3FN)
+
+A 3FN exige que não existam dependências transitivas, atributos dependendo de outros que não sejam chave.
+
+No modelo:
+
+Informações de professor estão apenas na tabela professor.
+Informações de turma estão apenas na tabela turma.
+A tabela disciplina usa apenas chaves estrangeiras (id_professor, id_turma).
+Nenhum atributo depende de outro atributo não-chave.
